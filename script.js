@@ -7,7 +7,7 @@ function lanzarDado () {
    
     while (x < numDados) {
         x += 1;
-        let valRandom = Math.round(Math.random(0,1)*valCaras); 
+        let valRandom = Math.round(Math.random(0,valCaras)*(0,9)); 
         var html = 
         `<div class="d-flex bg-secondary mx-4 px-4 shadow p-3 mb-5 rounded "><h3 id="vRandom${x}">${valRandom}</h3></div>`;        
         $("#result").append(html);       
